@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/RL_container_logged_in_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/IV_user_profile"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        <TextView
+            android:id="@+id/TV_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IV_user_profile"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="Sandip Mondal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/TV_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/black_border_white_bg"
+            android:elevation="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingLeft="@dimen/_9sdp"
+            android:paddingRight="@dimen/_9sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:text="@string/logout"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_11sdp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL_container_logged_out_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_35sdp"
+        android:paddingRight="@dimen/_35sdp">
+
+        <TextView
+            android:id="@+id/TV_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_border_white_bg"
+            android:elevation="@dimen/_4sdp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_7sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:text="@string/signup"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/TV_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_signup"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/black_border_white_bg"
+            android:elevation="@dimen/_4sdp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_7sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:text="@string/login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_11sdp" />
+
+    </RelativeLayout>
+</RelativeLayout>

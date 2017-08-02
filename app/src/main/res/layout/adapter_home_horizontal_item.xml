@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:background="@drawable/black_border_trans_bg"
+    >
+
+    <ImageView
+        android:id="@+id/IV_banner"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+
+        android:src="@drawable/ic_image_loading" />
+
+    <TextView
+        android:id="@+id/TV_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IV_banner"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Samsung LED TV"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/TV_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_item_name"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Price: Rs 40000"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp" />
+
+</RelativeLayout>
